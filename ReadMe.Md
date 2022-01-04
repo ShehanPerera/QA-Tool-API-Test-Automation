@@ -1,4 +1,4 @@
-##QA-Tool API Test Automation
+## QA-Tool API Test Automation
 
 * This is a API test automation tool based on postman,newman and nodejs.
 * Using postman and newman we can verify responses and details related to response such as response code , response time.
@@ -8,7 +8,7 @@
 * Easy to add test requests (only postman collection and testcase csv addition will give newer test scope)
 * Can run in CLI  
 
-##Pre-requires 
+## Pre-requires 
 
 node -v : v10.23.0
 
