@@ -31,7 +31,7 @@ npm install -S properties-reader
 2. Run ``node runServer.js``
 3. When send requests for mock-server , mock.logs will update for each requests
 
-##To verify responses only (for Production, DA-SmokeTest)
+## To verify responses only (for Production, DA-SmokeTest)
 
 
 1. Go to ``QA-Tools-API-Automation`` folder 
@@ -48,7 +48,7 @@ newman run GET-Example/QATool-GET.postman_collection.json -g QATool-Conf.json -d
 6. Go to ``reports`` folder and open ``QATool-report.html`` in browser and verify all test cases are passed.
 
 
-##Sanity Flow Testing 
+## Sanity Flow Testing 
 
 1. Copy ``QA-Tools-API-Automation`` folder  in to server 
 2. Ensure all Pre-requires are installed 
@@ -104,7 +104,7 @@ Eg :
 </pre>
  
 
-##Adding test case to csv 
+## Adding test case to csv 
 
 * CSV pattern 
 
