@@ -1,0 +1,14 @@
+{
+	"id": "84d0dbcb-298b-4e68-87a4-b108eb08d776",
+	"values": [
+		{
+			"key": "url",
+			"value": "http://127.0.0.1:3000",
+			"enabled": true
+		}
+	],
+	"name": "My Workspace Globals",
+	"_postman_variable_scope": "globals",
+	"_postman_exported_at": "2022-01-04T05:38:06.035Z",
+	"_postman_exported_using": "Postman/7.36.5"
+}

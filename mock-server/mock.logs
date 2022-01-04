@@ -1,0 +1,3 @@
+1641293971908|This is a GET request|/users?username=admin&password=123
+1641293981483|This is a GET request|/users?username=user&password=123
+1641293991498|This is a GET request|/users?username=admin2&password=123

@@ -1,0 +1,28 @@
+{
+  "users": [
+    {
+      "id": 1,
+      "username": "admin",
+      "password": "123",
+      "name": "ADMIN",
+      "usertype": "admin",
+      "createdAt": 1641269419563
+    },
+    {
+      "id": 2,
+      "username": "user",
+      "password": "123",
+      "name": "USER",
+      "usertype": "user",
+      "createdAt": 1641269501764
+    },
+    {
+      "id":3,
+      "username": "admin2",
+      "password": "123",
+      "name": "ADMIN2",
+      "usertype": "notadmin",
+      "createdAt": 1641269419593
+    }
+  ]
+}

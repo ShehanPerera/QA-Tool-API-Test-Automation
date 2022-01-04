@@ -1,0 +1,4 @@
+testcase,username,password,expect_name,expect_usertype,logs
+Verify_admin_data,admin,123,ADMIN,admin,"mock,/home/shehan/QA-Tools-API-Automation/mock-server/mock.logs,1"
+Verify_user_data,user,123,USER,user,"mock,/home/shehan/QA-Tools-API-Automation/mock-server/mock.logs,1"
+Verify_admin2_data,admin2,123,ADMIN2,admin,"mock,/home/shehan/QA-Tools-API-Automation/mock-server/mock.logs,1"

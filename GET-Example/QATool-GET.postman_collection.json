@@ -1,0 +1,65 @@
+{
+	"info": {
+		"_postman_id": "c2822b81-8c8e-4166-8b9a-854927ba5326",
+		"name": "QA",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GetUserExample",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"exec": [
+							"const testcase = pm.iterationData.get(\"testcase\");",
+							"tests[\"validate response status\"] = responseCode.code == \"200\";",
+							"const pmresp = pm.response.json();",
+							"pm.test(testcase + \"validate response avaliable\",function() {",
+							"pm.expect(pm.response.text()).contains(\"id\");",
+							"pm.expect(pm.response.text()).contains(\"username\");",
+							"pm.expect(pm.response.text()).contains(\"password\");",
+							"pm.expect(pm.response.text()).contains(\"name\");",
+							"pm.expect(pm.response.text()).contains(\"usertype\");",
+							"pm.expect(pm.response.text()).contains(\"createdAt\");",
+							"});",
+							"",
+							"pm.test(testcase + \" validate response name\",function() {",
+							"    pm.expect(pmresp[0].name).to.eql(pm.iterationData.get(\"expect_name\"));",
+							"});",
+							"",
+							"pm.test(testcase + \" validate response usertype\",function() {",
+							"    pm.expect(pmresp[0].usertype).to.eql(pm.iterationData.get(\"expect_usertype\"));",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/users?username={{username}}&password={{password}}",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"users"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "{{username}}"
+						},
+						{
+							"key": "password",
+							"value": "{{password}}"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
